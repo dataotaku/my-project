@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+h1 {
+    color: red;
+}
+
+p {
+    border: 1px solid red;
+    height: 100px;
+}
+
+strong, em {
+    border: 2px solid blue;
+    height: 50px;
+    display: inline-block;
+}
+
+h1:hover {
+    border: 1px solid blue;
+}
+
+h1:before {
+    content: "before content";
+    color: blue;
+}
+
+h1:after {
+    content: "after content";
+    color: green;
+}
+
+p.text1 {
+    border: 1px solid blue;
+}
+
+.text2 {
+    border: 1px solid red;
+}
+
+h2 {
+    border: 1px solid green;
+}
+
+h3 {
+    border: 1px solid blue;
+}
+
+div strong {
+    border: 2px solid black;
+}
+
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+input[type="password"] {
+    border: 1px solid red;
+}
+
+section {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    background-image: url(../img/장운호_400pixel.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+}

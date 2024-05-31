@@ -1,0 +1,108 @@
+.box1 {
+    width: 300px;
+    height: 300px;
+    background: blue;
+    margin: 100px;
+    float: left;
+    box-shadow: 10px 10px 30px black;
+    border-radius: 30px;
+}
+
+.box2 {
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin: 100px;
+    float: left;
+    box-shadow: -20px -20px 0px pink;
+    border-radius: 50%;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 50px;
+}
+
+div:nth-of-type(1) {
+    background: linear-gradient(to bottom, blue, red);
+}
+
+div:nth-of-type(2) {
+    background: linear-gradient(to top, blue, red);
+}
+
+div:nth-of-type(3) {
+    background: linear-gradient(to left, blue, red);
+}
+
+div:nth-of-type(4) {
+    background: linear-gradient(to left, blue, red);
+}
+
+div:nth-of-type(5) {
+    background: linear-gradient(45deg, blue, red);
+}
+
+p {
+    font-weight: bold;
+    font-size: 100px;
+    font-family: "arial";
+    color: #111;
+    margin: 100px;
+    text-shadow: 30px 30px 10px #aaa;
+    /* display: inline-block; */
+}
+
+div {
+    width: 650px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+div img {
+    width: 200px;
+    margin: 6px;
+}
+
+/* 값이 커질수록 blur 효과가 커짐 */
+div img:nth-of-type(2) {
+    filter: blur(3px);
+}
+
+/* 1보다 작아지면 어두워지고, 커지면 밝아짐 */
+div img:nth-of-type(3) {
+    filter: brightness(0.5);
+}
+
+/* 100%에서 작아지면 명암대비 효과 감소, 커지면 증가 */
+div img:nth-of-type(4) {
+    filter: contrast(150%);
+}
+
+/* 100%에 가까울수록 흑백으로 전환 */
+div img:nth-of-type(5) {
+    filter: grayscale(100%);
+}
+
+/* 0deg는 원래 이미지 색상. 0~360deg까지 색상변경 가능 */
+div img:nth-of-type(6) {
+    filter: hue-rotate(180deg);
+}
+
+/* 100%에 가까울수록 색이 반대로 변환됨 */
+div img:nth-of-type(7) {
+    filter: invert(100%);
+}
+
+/* 0에 가까울수록 채도가 낮아짐 */
+div img:nth-of-type(8) {
+    filter: saturate(0.5);
+}
+
+/* 100%에 가까울수록 갈색톤으로 변경됨 */
+div img:nth-of-type(9) {
+    filter: sepia(100%)
+}

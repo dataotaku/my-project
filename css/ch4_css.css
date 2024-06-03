@@ -1,8 +1,34 @@
-img {
+article {
+    width: 500px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 50px auto;
+}
+
+article svg {
+    width: 100%;
+}
+
+article svg path {
+    fill: transparent;
+    stroke: red;
+    stroke-width: 1;
+    stroke-dasharray: 1420;
+    stroke-dashoffset: -1420;
+    transition: all 3s;
+}
+
+article:hover svg path {
+    stroke-dashoffset: 0;
+}
+
+
+/* img {
     width: 10000; 
     margin: 50px;
     object-fit: contain;
-}
+} */
 
 /* section {
     width: 200px;
@@ -35,7 +61,7 @@ section:nth-of-type(4) article {
     transform:  rotate(45deg);
 } */
 
-section {
+/* section {
     width: 200px;
     height: 200px;
     border: 1px solid #000;
@@ -65,4 +91,4 @@ section:nth-of-type(3) article {
 
 section:nth-of-type(4) article {
     transform: translateZ(-100px);
-}
+} */

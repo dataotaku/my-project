@@ -1,19 +1,46 @@
-const btnPlus = document.querySelector(".btnPlus");
-const btnMinus = document.querySelector(".btnMinus");
+const ver = navigator.userAgent;
+console.log(ver);
 
-let num = 0;
+// const link = document.querySelector("a");
+// const link_href = link.getAttribute("href")
+// console.log(link_href)
 
-btnPlus.addEventListener("click", e => {
-    e.preventDefault();
-    num++;
-    console.log(num);
-})
+// const btns = document.querySelectorAll(".btns li");
+// const boxs = document.querySelectorAll("section article");
 
-btnMinus.addEventListener("click", e => {
-    e.preventDefault();
-    num--;
-    console.log(num);
-})
+// // 버튼의 갯수만큼 반복하며 클릭이벤트 연결
+// for (let i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", e => {
+//         // 각 인수로 순서값과 버튼, 박스 그룹을 넣어서
+//         // activation 함수 호출
+//         activation(i, btns);
+//         activation(i, boxs)
+//     })
+// }
+
+// function activation(index, list) {
+//     for (let el of list) {
+//         el.classList.remove("onn");
+//     }
+//     list[index].classList.add("on")
+// }
+
+// const btnPlus = document.querySelector(".btnPlus");
+// const btnMinus = document.querySelector(".btnMinus");
+
+// let num = 0;
+
+// btnPlus.addEventListener("click", e => {
+//     e.preventDefault();
+//     num++;
+//     console.log(num);
+// })
+
+// btnMinus.addEventListener("click", e => {
+//     e.preventDefault();
+//     num--;
+//     console.log(num);
+// })
 
 // const list = document.querySelectorAll(".list li")
 

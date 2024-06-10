@@ -25,7 +25,7 @@ section {
     width: 340px;
     padding: 30px;
     background-color: #fff;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -101,7 +101,7 @@ section a.btnView {
 }
 
 section ul.contact {
-    margin-bottom:  25px;
+    margin-bottom:  3px;
 }
 
 section ul.contact li {
@@ -128,4 +128,40 @@ section ul.contact li span {
     font-family: "orbitron";
     color: #555;
     letter-spacing: 1px;
+}
+
+section nav.others {
+    width: 100%;
+    text-align: center;
+}
+section nav.others a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 30px 10px 10px 10px;
+    opacity: 0.4;
+    filter: saturate(0.7);
+}
+
+section nav.others a.on {
+    opacity: 1;
+    filter: saturate(1);
+}
+
+section nav.others a:nth-of-type(1) {
+    background-color: #35e0f7;
+    box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.7);
+}
+section nav.others a:nth-of-type(2) {
+    background-color: #55f5cd;
+    box-shadow: 5px 5px 10px rgba(85, 245, 178, 0.7);
+}
+section nav.others a:nth-of-type(3) {
+    background-color: #ff80df;
+    box-shadow: 5px 5px 10px rgba(255, 128, 223, 0.7);
+}
+section nav.others a:nth-of-type(4) {
+    background-color: #a794fd;
+    box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
 }

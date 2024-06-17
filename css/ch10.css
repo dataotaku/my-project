@@ -265,3 +265,16 @@ body {
     height: 185px;
     margin-bottom: 20px;
 }
+.wrap #circle .face6 .inner > div i {
+    width: 22%;
+    height: 100%;
+    border-right: 1px solid #bbb;
+    float: left;
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+    text-align: left;
+    line-height: 90px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}

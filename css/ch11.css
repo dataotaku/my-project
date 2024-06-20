@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:w-ght@100&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: 0;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    /* header와 section을 좌우 배치하기 위해 flex 설정 */
+    display: flex;
+}
+main header {
+    width: 20%;
+    height: 100%;
+    padding: 10vh 5vw;
+    display: flex;
+    /* 세로로 줄바꿈되게 처리 */
+    flex-wrap: wrap;
+    /* 세로축은 상단 하단 양끝으로 콘텐츠를 배치 */
+    align-content: space-between;
+    /* 가로축은 가운데로 배치 */
+    justify-content: center;
+    position: relative;
+    /* section요소와 aside 팝업 요소보다 위에 배치하기 위해 3을 지정 */
+    z-index: 3;
+    border: 10px solid pink;
+}
+main nav {
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    /* section요소와 aside 팝업 요소보다 위에 배치하기 위해 3을 지정 */
+    z-index: 3;
+    border: 10px solid aqua;
+}
+main section {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    padding-top: 140px;
+    /* aside 팝업 요소보다 아래에 배치하기 위해 1을 지정 */
+    z-index: 1;
+    border: 10px solid yellow;
+}

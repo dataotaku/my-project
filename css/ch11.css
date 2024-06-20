@@ -34,7 +34,23 @@ main header {
     position: relative;
     /* section요소와 aside 팝업 요소보다 위에 배치하기 위해 3을 지정 */
     z-index: 3;
-    border: 10px solid pink;
+    /* border: 10px solid pink; */
+}
+main header h1 {
+    /* 안쪽의 자간과 줄 높이를 초기화 */
+    font-size: 0px;
+    color: #fff;
+}
+main header h1 i {
+    font-size: 5vw;
+    margin-bottom: 15px;
+}
+main header h1 span {
+    font: normal 0.8vw/1 "arial";
+}
+main header address {
+    font: normal 11px/1.2 "arial";
+    color: #888;
 }
 main nav {
     position: absolute;
@@ -42,7 +58,15 @@ main nav {
     right: 5vw;
     /* section요소와 aside 팝업 요소보다 위에 배치하기 위해 3을 지정 */
     z-index: 3;
-    border: 10px solid aqua;
+    /* border: 10px solid aqua; */
+}
+main nav ul {
+    display: flex;
+}
+main nav ul li a {
+    font-size: 35px;
+    color: #bbb;
+    margin-right: 30px;
 }
 main section {
     position: relative;

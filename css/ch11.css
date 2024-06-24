@@ -64,7 +64,7 @@ main nav ul {
     display: flex;
 }
 main nav ul li a {
-    font-size: 35px;
+    font-size: 15px;
     color: #bbb;
     margin-right: 30px;
 }
@@ -73,7 +73,7 @@ main section {
     width: 80%;
     height: 100%;
     display: flex;
-    padding-top: 140px;
+    padding-top: 15vh;
     /* aside 팝업 요소보다 아래에 배치하기 위해 1을 지정 */
     z-index: 1;
     /* border: 10px solid yellow; */
@@ -149,7 +149,7 @@ main section article .inner figure {
     /* 왼쪽 방향 기준으로 변형이 일어나도록 중심축 변경 */
     transform-origin: left center;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     /* 영상박스의 채도를 낮춤 */
     filter: saturate(10%);
@@ -202,7 +202,7 @@ main aside {
     opacity: 0;
     /* z축의 순서를 2로 설정하여 section은 덮고, h1과 nav는 aside위에 배치 */
     z-index: 2;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 20vh 7vw 14vh 20vw;
     display: flex;
     justify-content: space-between;

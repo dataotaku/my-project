@@ -64,10 +64,10 @@ figure section {
     height: 65vh;
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin-top: -32vh;
+    top: 140%;
+    margin-top: -25vh;
     margin-left: -10vw;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
 }
 figure section article {
     /* 개별 음악 플레이어 패널 */
@@ -95,4 +95,18 @@ figure section article .inner {
     opacity: 0.6;
     /* 축소시켜서 비활성화 */
     transform: scale(0.8);
+    transition: opacity 1s, transform 1s;
+}
+figure section article.on .inner {
+    /* 활성화 상태 */
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+figure section article .inner pic {
+    /* 음악 플레이어 패널 제목 */
+    width: 15vw;
+    height: 15vw;
+    margin: 0px auto;
+    border-radius: 50%;
+    background-repeat: no-repeat;
 }

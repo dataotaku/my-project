@@ -7,6 +7,9 @@ let i = 0;
 
 // article의 갯수 만큼 반복
 for (let el of lists) {
+    let pic = el.querySelector(".pic");
     el.style.transform = `rotate(${deg * i}deg) translateY(-100vh)`;
+    // 배경이미지 추가
+    pic.style.backgroundImage = `url(../img/member12_${i + 1}.jpg)`;
     i++;
 }

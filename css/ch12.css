@@ -102,11 +102,50 @@ figure section article.on .inner {
     opacity: 0.9;
     transform: scale(1.1);
 }
-figure section article .inner pic {
+figure section article .inner .pic {
     /* 음악 플레이어 패널 제목 */
     width: 15vw;
     height: 15vw;
     margin: 0px auto;
     border-radius: 50%;
     background-repeat: no-repeat;
+    background-position: 200%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+figure section article .inner .pic::before,
+figure section article .inner .pic::after {
+    content: "";
+    position: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* 부모요소 .pic으로부터 이미지 상속 */
+    border-image: inherit;
+    background-position: center;
+    background-repeat: inherit;
+    block-size: cover;
+    transform-origin: center center;
+}
+figure section article .inner .pic::before {
+    transform: translateY(10%);
+    /* 이미지를 블러 처리하고 밝게 적용 */
+    filter: blur(20px) brightness(1.6);
+}
+figure section article .inner .pic .dot {
+    /* 음악 플레이어 패널 제목 아이콘 */
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #e4f1ff;
+    position: relative;
+    bottom: 0px;
+    z-index: 3;
+    /* inset으로 안쪽 그림자 생성 */
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
 }

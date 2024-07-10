@@ -145,14 +145,13 @@ figure section article .inner .pic .dot {
     border-radius: 50%;
     background: #e4f1ff;
     position: relative;
-    bottom: 0px;
     z-index: 3;
     /* inset으로 안쪽 그림자 생성 */
     box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
 }
 figure section article .inner .txt {
     text-align: center;
-    position: center;
+    position: relative;
     z-index: 3;
 }
 figure section article .inner .txt h2 {
@@ -227,7 +226,7 @@ figure .btnPrev span {
     color: #fff;
     opacity: 1;
     transform: translateX(30%);
-    transition: o.5s;
+    transition: .5s;
 }
 figure .btnPrev::before {
     content: "";
@@ -249,9 +248,9 @@ figure .btnPrev::after {
     height: 1px;
     background: #fff;
     position: absolute;
-    top: 50%;
-    right: 0px;
-    transform-origin: right center;
+    bottom: 50%;
+    left: 0px;
+    transform-origin: left center;
     transform: rotate(180deg);
     transition: 0.5s;
 }
@@ -293,7 +292,7 @@ figure .btnNext::before {
     position: absolute;
     top: 50%;
     left: 0px;
-    transform-origin: left center;
+    transform-origin: right center;
     transform: rotate(180deg);
     transition: 0.5s;
 }
@@ -304,8 +303,8 @@ figure .btnNext::after {
     height: 1px;
     background: #fff;
     position: absolute;
-    top: 50%;
-    right: 0px;
+    bottom: 50%;
+    left: 0px;
     transform-origin: right center;
     transform: rotate(-180deg);
     transition: 0.5s;
